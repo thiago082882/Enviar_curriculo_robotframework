@@ -1,0 +1,13 @@
+1646154755790	geckodriver	INFO	Listening on 127.0.0.1:52113
+1646154759409	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52114" "-no-remote" "-profile" "C:\\Users\\Micro\\AppData\\Local\\Temp\\rust_mozprofileCTa9UK"
+1646154761126	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Micro\\AppData\\Local\\Temp\\rust_mozprofileCTa9UK\\search.json.mozlz4", (void 0)))
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+DevTools listening on ws://localhost:52114/devtools/browser/ef98e1e1-5ce7-4adf-a189-4f3d5b940eb6
+1646154768015	Marionette	INFO	Listening on port 52120
+1646154768303	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1646154768812	Marionette	INFO	Stopped listening on port 52120
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+console.error: "Could not write session state file " (new Error("IOUtils: Shutting down and refusing additional I/O tasks", (void 0), 106)) "DOMException@resource://gre/modules/PromiseWorker.jsm:106:18\npostMessage@resource://gre/modules/PromiseWorker.jsm:342:55\nobserve@resource://gre/modules/AsyncShutdown.jsm:575:16\n"
+JavaScript error: resource://gre/modules/CrashMonitor.jsm, line 201: AbortError: IOUtils: Shutting down and refusing additional I/O tasks

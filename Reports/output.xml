@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.9.7 on win32)" generated="20220302 21:04:32.958" rpa="false" schemaversion="2">
+<suite id="s1" name="Trabalhe Conosco" source="C:\Users\Micro\PycharmProjects\RobotFramework\Spects\trabalhe_conosco.robot">
+<kw name="Open Browser" library="SeleniumLibrary" type="SETUP">
+<arg>about:blank</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220302 21:04:33.727" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20220302 21:04:33.727" endtime="20220302 21:04:38.704"/>
+</kw>
+<test id="s1-t1" name=" Enviar Curriculo">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220302 21:04:38.736" level="INFO">Opening url 'https://www.primecontrol.com.br/trabalhe-conosco/'</msg>
+<status status="PASS" starttime="20220302 21:04:38.736" endtime="20220302 21:04:54.181"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${trabalheconosco.btnAccept}</arg>
+<arg>6</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220302 21:04:54.184" endtime="20220302 21:04:54.255"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${trabalheconosco.btnAccept}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220302 21:04:54.261" level="INFO">Clicking element '//a[@id="hs-eu-confirmation-button"]'.</msg>
+<status status="PASS" starttime="20220302 21:04:54.260" endtime="20220302 21:04:54.506"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${trabalheconosco.btncadastrarcurriculo}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220302 21:04:54.514" level="INFO">Clicking element '//a[text()='CADASTRE SEU CURRÍCULO']'.</msg>
+<status status="PASS" starttime="20220302 21:04:54.512" endtime="20220302 21:05:09.589"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>New</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20220302 21:05:09.604" endtime="20220302 21:05:09.642"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${trabalheconosco.nome}</arg>
+<arg>${preencheFormulario.nome}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220302 21:05:09.647" level="INFO">Typing text 'Thiago Costa de Jesus' into text field '//*[@id="name"]'.</msg>
+<status status="PASS" starttime="20220302 21:05:09.644" endtime="20220302 21:05:10.117"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${trabalheconosco.cargo}</arg>
+<arg>${preencheFormulario.cargo}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220302 21:05:10.123" level="INFO">Typing text 'Estagiário em TI' into text field '//*[@id='headline']'.</msg>
+<status status="PASS" starttime="20220302 21:05:10.118" endtime="20220302 21:05:10.501"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${trabalheconosco.salario}</arg>
+<arg>${preencheFormulario.salario}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220302 21:05:10.507" level="INFO">Typing text '1.500,00' into text field '//*[@id='salary']'.</msg>
+<status status="PASS" starttime="20220302 21:05:10.504" endtime="20220302 21:05:10.797"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${trabalheconosco.email}</arg>
+<arg>${preencheFormulario.email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220302 21:05:10.805" level="INFO">Typing text 'thiagocostadejesus2@gmail.com' into text field '//*[@id='email']'.</msg>
+<status status="PASS" starttime="20220302 21:05:10.801" endtime="20220302 21:05:11.242"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${trabalheconosco.telefone}</arg>
+<arg>${preencheFormulario.telefone}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220302 21:05:11.265" level="INFO">Typing text '11 9 6227-3053' into text field '//*[@id='phone-0']'.</msg>
+<status status="PASS" starttime="20220302 21:05:11.262" endtime="20220302 21:05:11.698"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${trabalheconosco.cbmPais}</arg>
+<arg>${preencheFormulario.cbmPais}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20220302 21:05:11.707" level="INFO">Selecting options from selection list '//*[@id='country']' by value BR.</msg>
+<status status="PASS" starttime="20220302 21:05:11.705" endtime="20220302 21:05:11.923"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${trabalheconosco.estado}</arg>
+<arg>${preencheFormulario.estado}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220302 21:05:11.930" level="INFO">Typing text 'SP' into text field '//*[@id='region']'.</msg>
+<status status="PASS" starttime="20220302 21:05:11.927" endtime="20220302 21:05:12.116"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${trabalheconosco.cidade}</arg>
+<arg>${preencheFormulario.cidade}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220302 21:05:12.160" level="INFO">Typing text 'São Paulo' into text field '//*[@id='city']'.</msg>
+<status status="PASS" starttime="20220302 21:05:12.158" endtime="20220302 21:05:12.671"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${trabalheconosco.bairro}</arg>
+<arg>${preencheFormulario.bairro}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220302 21:05:12.676" level="INFO">Typing text 'Parque santo antônio' into text field '//*[@id='neighborhood']'.</msg>
+<status status="PASS" starttime="20220302 21:05:12.673" endtime="20220302 21:05:13.014"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${trabalheconosco.endereço}</arg>
+<arg>${preencheFormulario.endereço}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220302 21:05:13.020" level="INFO">Typing text 'Rua Mangualde' into text field '//*[@id='address']'.</msg>
+<status status="PASS" starttime="20220302 21:05:13.016" endtime="20220302 21:05:13.529"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${trabalheconosco.cep}</arg>
+<arg>${preencheFormulario.cep}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220302 21:05:13.534" level="INFO">Typing text '05851260' into text field '//*[@id='zipcode']'.</msg>
+<status status="PASS" starttime="20220302 21:05:13.531" endtime="20220302 21:05:13.864"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${trabalheconosco.resumo}</arg>
+<arg>${preencheFormulario.resumo}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220302 21:05:14.153" level="INFO">Typing text 'curriculo enviado com robot framework' into text field '//*[@id='summary']'.</msg>
+<status status="PASS" starttime="20220302 21:05:14.151" endtime="20220302 21:05:14.804"/>
+</kw>
+<kw name="Choose File" library="SeleniumLibrary">
+<arg>${trabalheconosco.curriculo}</arg>
+<arg>${EXECDIR}/Spects/curriculo_thiagocostadejesus.pdf</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<msg timestamp="20220302 21:05:14.807" level="INFO">Sending C:\Users\Micro\PycharmProjects\RobotFramework\Spects\curriculo_thiagocostadejesus.pdf to browser.</msg>
+<status status="PASS" starttime="20220302 21:05:14.805" endtime="20220302 21:05:14.914"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>curriculo_thiagocostadejesus.pdf</arg>
+<arg>30</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220302 21:05:14.932" endtime="20220302 21:05:15.642"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${trabalheconosco.btnfinalizar}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220302 21:05:15.644" endtime="20220302 21:05:15.980"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${trabalheconosco.termo}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220302 21:05:15.985" level="INFO">Clicking element '//input[@id="consent"]'.</msg>
+<status status="PASS" starttime="20220302 21:05:15.983" endtime="20220302 21:05:16.168"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${trabalheconosco.btnfinalizar}</arg>
+<arg>6</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220302 21:05:16.171" endtime="20220302 21:05:16.239"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${trabalheconosco.btnfinalizar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220302 21:05:16.248" level="INFO">Clicking element '//button[@type="submit"]'.</msg>
+<status status="PASS" starttime="20220302 21:05:16.246" endtime="20220302 21:05:16.427"/>
+</kw>
+<kw name="Wait Until Element Contains" library="SeleniumLibrary">
+<arg>${trabalheconosco.sucesso}</arg>
+<arg>${preencheFormulario.sucesso}</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" starttime="20220302 21:05:16.433" endtime="20220302 21:05:17.062"/>
+</kw>
+<status status="PASS" starttime="20220302 21:04:38.706" endtime="20220302 21:05:17.069"/>
+</test>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220302 21:05:17.071" endtime="20220302 21:05:40.609"/>
+</kw>
+<doc>Envio de currículo para a Prime Control-Thiago Costa de Jesus</doc>
+<status status="PASS" starttime="20220302 21:04:32.966" endtime="20220302 21:05:40.609"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Trabalhe Conosco">Trabalhe Conosco</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

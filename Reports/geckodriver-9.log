@@ -1,0 +1,21 @@
+1646154655080	geckodriver	INFO	Listening on 127.0.0.1:61483
+1646154658184	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61484" "-no-remote" "-profile" "C:\\Users\\Micro\\AppData\\Local\\Temp\\rust_mozprofile2WtKds"
+1646154658981	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Micro\\AppData\\Local\\Temp\\rust_mozprofile2WtKds\\search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+DevTools listening on ws://localhost:61484/devtools/browser/2a03220e-e3b6-4bdc-941e-2721294dc6bf
+1646154664904	Marionette	INFO	Listening on port 61491
+1646154665037	Marionette	WARN	TLS certificate errors will be ignored for this session
+1646154665647	Marionette	INFO	Stopped listening on port 61491
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "UpdateManager: writing update xml data"
+JavaScript error: resource://gre/modules/UpdateService.jsm, line 5508: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Phase "profile-before-change" is finished, it is too late to register completion condition "UpdateManager: writing update xml data"" {file: "resource://gre/modules/AsyncShutdown.jsm" line: 718}]'[JavaScript Error: "Phase "profile-before-change" is finished, it is too late to register completion condition "UpdateManager: writing update xml data"" {file: "resource://gre/modules/AsyncShutdown.jsm" line: 718}]' when calling method: [nsIUpdateManager::saveUpdates]
+1646154671324	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+close()@RemoteAgent.jsm:136
